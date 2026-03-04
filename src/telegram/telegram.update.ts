@@ -1,4 +1,4 @@
-import { InjectBot, Update, Start, On } from '@grammyjs/nestjs';
+п»їimport { InjectBot, Update, Start, On } from '@grammyjs/nestjs';
 import { Injectable } from '@nestjs/common';
 import { Context } from 'grammy';
 import { TelegramService } from './telegram.service';
@@ -10,7 +10,7 @@ export class TelegramUpdate {
 
   @Start()
   async onStart(ctx: Context): Promise<void> {
-    await ctx.reply('Привет! Отправь мне голосовое сообщение.');
+    await ctx.reply('РџСЂРёРІРµС‚! РћС‚РїСЂР°РІСЊ РјРЅРµ РіРѕР»РѕСЃРѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ.');
   }
 
   @On(':voice')
@@ -18,3 +18,4 @@ export class TelegramUpdate {
     return this.telegramService.processVoiceMessage(ctx);
   }
 }
+

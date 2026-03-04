@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+﻿import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
 import LocalSession from 'telegraf-session-local';
@@ -15,3 +15,4 @@ const sessions = new LocalSession();
   ],
 })
 export class AppModule {}
+

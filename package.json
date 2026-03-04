@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "voice_help_ai_bot",
   "version": "0.0.1",
   "description": "",
@@ -72,3 +72,4 @@
     "testEnvironment": "node"
   }
 }
+

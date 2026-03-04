@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+п»їimport { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import axios, { AxiosError } from 'axios';
 import { OPENAI_API, TELEGRAM_API } from 'src/constants';
@@ -39,7 +39,8 @@ export class SpeechService {
       const status = axiosError.response?.status;
       const message =
         axiosError.response?.data?.error?.message ?? axiosError.message;
-      throw new Error(`Ошибка запроса распознавания (${status}): ${message}`);
+      throw new Error(`РћС€РёР±РєР° Р·Р°РїСЂРѕСЃР° СЂР°СЃРїРѕР·РЅР°РІР°РЅРёСЏ (${status}): ${message}`);
     }
   }
 }
+
