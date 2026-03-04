@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
 import LocalSession from 'telegraf-session-local';
+import { TelegramModule } from './telegram/telegram.module';
 
 const sessions = new LocalSession();
 
@@ -10,6 +11,7 @@ const sessions = new LocalSession();
     ConfigModule.forRoot({
       isGlobal: true,
     }),
+    TelegramModule,
   ],
 })
 export class AppModule {}
